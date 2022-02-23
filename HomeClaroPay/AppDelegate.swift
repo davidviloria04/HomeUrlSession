@@ -9,11 +9,15 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    //var delegate: SceneDelegate?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        let homeRouter = HomeRouter.build()
+//
+//        delegate?.window?.rootViewController = homeRouter
+//        delegate?.window?.makeKeyAndVisible()
         return true
     }
 
