@@ -43,15 +43,11 @@ extension HomePresenter: HomePresenterProtocol {
                 self.view?.error(error: err.localizedDescription)
                 return
             }
-            if let data = data {
+            if data != nil {
                 print(">>>>> Succes")
                 self.view?.succes()
                 return
             }
         }
-//        self.cellType = interactor?.getCellType()
-//        view?.ViewCell(cells: self.cellType ?? [])
-//        view?.NumCell(numCell: self.cellType?.count ?? 0)
-//        print(interactor?.getDatos())
     }
 }

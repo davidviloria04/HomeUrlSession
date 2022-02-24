@@ -34,6 +34,7 @@ class NetworkManager{
                 callBack(nil, err)
                 return
             }
+            
             switch response.statusCode{
             case NetworkManager.http_Ok_200...NetworkManager.http_Ok_299:
                 guard let data = data else {

@@ -34,11 +34,10 @@ extension HomeViewController: HomeViewControllerProtocol, UITableViewDelegate, U
     
     func succes() {
         print(">>>>> Succes")
-//  self.tableView.reloadData()
+        //  self.tableView.reloadData()
     }
     
     func error(error: String) {
-        
         DispatchQueue.main.async {
             let alert = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default))
