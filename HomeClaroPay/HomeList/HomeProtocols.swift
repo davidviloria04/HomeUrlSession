@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 protocol HomeViewControllerProtocol: AnyObject {
@@ -18,7 +19,7 @@ protocol HomeViewControllerProtocol: AnyObject {
 }
 protocol HomeRouterProtocol: AnyObject{
     //Presenter -> Router
-    //static func build() -> UIViewController
+    static func build() -> UIViewController
 }
 
 protocol HomePresenterProtocol: AnyObject{

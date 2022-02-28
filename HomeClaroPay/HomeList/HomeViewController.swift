@@ -43,8 +43,6 @@ extension HomeViewController: HomeViewControllerProtocol, UITableViewDelegate, U
             alert.addAction(UIAlertAction(title: "Ok", style: .default))
             self.present(alert, animated: true)
         }
-        
     }
-    
-    
+
 }

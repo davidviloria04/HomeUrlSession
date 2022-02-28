@@ -17,7 +17,7 @@ class HomeInteractor: HomeInteractorProtocol{
     }
     
     func fetchHomeData(callBack: @escaping (_ data: Any?, _ error: Error?) -> Void) -> Void{
-        let myUrl = NetworkManager.request(url: "http://localhost:3000/ClaroPay-WS/home", method: "GET", type: HomeResponse.self) { data, error in
+        NetworkManager.request(url: "http://localhost:3000/ClaroPay-WS/home", method: "GET", type: Widget.self) { data, error in
             callBack(data, error)
         }
     }
