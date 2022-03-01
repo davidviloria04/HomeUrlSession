@@ -56,6 +56,7 @@ extension WidgetGeneralView: WidgetGeneralViewProtocol, UICollectionViewDelegate
     
     func succes() {
         print(">>>>> Succes")
+        
     }
     
     func error(error: String) {

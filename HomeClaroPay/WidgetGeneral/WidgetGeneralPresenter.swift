@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class WidgetGeneralPresenter  {
     
@@ -23,6 +24,7 @@ class WidgetGeneralPresenter  {
 }
 
 extension WidgetGeneralPresenter: WidgetGeneralPresenterProtocol {
+
     func getdata() -> [WidgetGeneral]?{
         return interactor?.getWidgets()
     }

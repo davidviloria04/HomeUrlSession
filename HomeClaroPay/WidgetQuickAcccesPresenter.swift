@@ -9,7 +9,6 @@
 import Foundation
 
 class WidgetQuickAcccesPresenter  {
-    
     // MARK: Properties
     weak var view: WidgetQuickAcccesViewProtocol?
     var interactor: WidgetQuickAcccesInteractorInputProtocol?

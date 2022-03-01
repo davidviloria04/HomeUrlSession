@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class HomePresenter  {
     
@@ -22,7 +23,7 @@ class HomePresenter  {
         let interactor = HomeInteractor()
         let router = HomeRouter()
         let presenter = HomePresenter(interactor: interactor, router: router)
-
+        
         view.presenter = presenter
         presenter.router = router
         presenter.view = view
@@ -31,6 +32,12 @@ class HomePresenter  {
 }
 
 extension HomePresenter: HomePresenterProtocol {
+    
+    
+    func createGeneralWidget() -> UIViewController {
+        return WidgetGeneralWireFrame.createWidgetGeneralModule()
+    }
+    
     func getdata() -> [Widget]?{
         return interactor?.getWidgets()
     }
@@ -39,13 +46,18 @@ extension HomePresenter: HomePresenterProtocol {
         interactor?.fetchHomeData(){ data, error in
             if let err = error {
                 print(">>>>> \(err)")
+                self.interactor?.saveData(items: nil)
                 self.view?.error(error: err.localizedDescription)
                 return
             }
-            if data != nil {
+            if let dataDto = data, let homeResponse = dataDto as? HomeResponse {
                 print(">>>>> Succes")
+                self.interactor?.saveData(items: homeResponse.data)
                 self.view?.succes()
                 return
+            }else{
+                print(">>>>>Error en el casting de HomeResponse")
+                self.view?.error(error: "Error en el casting de HomeResponse")
             }
         }
     }

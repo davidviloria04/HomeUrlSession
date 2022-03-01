@@ -15,7 +15,7 @@ class NetworkManager{
     public static var http_error_404: Int = 404
     public static var http_error_500: Int = 500
     
-    static func request<T: Decodable>(url: String, method: String,type: T.Type, callBack: @escaping (_ data: T?, _ error: Error?) -> Void){
+    static func request<T: Decodable>(url: String, method: String, type: T.Type, callBack: @escaping (_ data: T?, _ error: Error?) -> Void){
         guard let url = URL(string: url) else{
             print(">>>>> No se pudo conectar")
             let err = NSError(domain: "", code: 400, userInfo: [NSLocalizedDescriptionKey: "No se encuentra la Url"])

@@ -30,10 +30,13 @@ protocol HomePresenterProtocol: AnyObject{
     
     func getHomeData() -> Void
     func getdata() -> [Widget]?
+    func createGeneralWidget() -> UIViewController
+
 }
 
 
 protocol HomeInteractorProtocol: AnyObject {
     func fetchHomeData(callBack: @escaping (_ data: Any?, _ error: Error?) -> Void) -> Void
     func getWidgets() -> [Widget]?
+    func saveData(items: [Widget]?)
 }

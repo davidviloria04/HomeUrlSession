@@ -12,6 +12,8 @@ class HomeViewController: UIViewController{
     
     var presenter: HomePresenterProtocol?
     
+    @IBOutlet weak var stackView: UIStackView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,19 +24,27 @@ class HomeViewController: UIViewController{
     }
 }
 
-extension HomeViewController: HomeViewControllerProtocol, UITableViewDelegate, UITableViewDataSource{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return self.presenter?.getdata()?.count ?? 0
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
-    }
+extension HomeViewController: HomeViewControllerProtocol{
     
     func succes() {
         print(">>>>> Succes")
-        //  self.tableView.reloadData()
+        
+        DispatchQueue.main.async {
+            guard let items = self.presenter?.getdata() else{
+                return
+            }
+            for item in items {
+                switch item.type{
+                case "WIDGET_GENERAL":
+                    if let widgetGeneralView = self.presenter?.createGeneralWidget(){
+                        self.addChild(widgetGeneralView)
+                        self.stackView.addSubview(widgetGeneralView.view)
+                    }
+                default:
+                    print("No se llama ningun View")
+                }
+            }
+        }
     }
     
     func error(error: String) {

@@ -11,8 +11,7 @@ import UIKit
 
 class WidgetGeneralWireFrame: WidgetGeneralWireFrameProtocol {
     static func createWidgetGeneralModule() -> UIViewController {
-        let storyboard = UIStoryboard.init(name: "", bundle: nil)
-        let view = storyboard.instantiateViewController(withIdentifier: "WidgetGeneralView") as! WidgetGeneralView
+        let view = WidgetGeneralView(nibName: nil, bundle: nil)
         let interactor = WidgetGeneralInteractor()
         let router = WidgetGeneralWireFrame()
         let presenter = WidgetGeneralPresenter(view: view, interactor: interactor, router: router)
