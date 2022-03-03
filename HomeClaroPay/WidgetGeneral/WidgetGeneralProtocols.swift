@@ -28,12 +28,12 @@ protocol WidgetGeneralPresenterProtocol: AnyObject {
     var interactor: WidgetGeneralInteractorProtocol? { get set }
     var router: WidgetGeneralWireFrameProtocol? { get set }
     
-    func getHomeData() -> Void
-    func getdata() -> [WidgetGeneral]?
+    func getWidgetGeneralData() -> Void
+    func getData() -> [WidgetGeneral]?
 }
 
 protocol WidgetGeneralInteractorProtocol: AnyObject {
     // PRESENTER -> INTERACTOR
-    func fetchHomeData(callBack: @escaping (_ data: Any?, _ error: Error?) -> Void) -> Void
+    func fetchWidgetsGeneral(callBack: @escaping (_ data: Any?, _ error: Error?) -> Void) -> Void
     func getWidgets() -> [WidgetGeneral]?
 }

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F05335C27D1467300E4AE23 /* WidgetQuickAccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05335B27D1467300E4AE23 /* WidgetQuickAccessModel.swift */; };
+		3F05336427D15B6600E4AE23 /* WidgetQuickAccessPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05335D27D15B6600E4AE23 /* WidgetQuickAccessPresenter.swift */; };
+		3F05336627D15B6600E4AE23 /* WidgetQuickAccessProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05335F27D15B6600E4AE23 /* WidgetQuickAccessProtocols.swift */; };
+		3F05336727D15B6600E4AE23 /* WidgetQuickAccessInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05336027D15B6600E4AE23 /* WidgetQuickAccessInteractor.swift */; };
+		3F05336827D15B6600E4AE23 /* WidgetQuickAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05336127D15B6600E4AE23 /* WidgetQuickAccessView.swift */; };
+		3F05336A27D15B6600E4AE23 /* WidgetQuickAccessWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05336327D15B6600E4AE23 /* WidgetQuickAccessWireFrame.swift */; };
 		3F2C74EE27C43F9A0050A8A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2C74ED27C43F9A0050A8A4 /* AppDelegate.swift */; };
 		3F2C74F027C43F9A0050A8A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2C74EF27C43F9A0050A8A4 /* SceneDelegate.swift */; };
 		3F2C74F227C43F9A0050A8A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2C74F127C43F9A0050A8A4 /* ViewController.swift */; };
@@ -32,17 +38,16 @@
 		3F78BAE227C6BB73001743F3 /* WidgetBannerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78BADD27C6BB73001743F3 /* WidgetBannerInteractor.swift */; };
 		3F91E61827C946FE006D6B47 /* WidgetGeneralCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91E61727C946FE006D6B47 /* WidgetGeneralCell.swift */; };
 		3F91E61A27C94C3A006D6B47 /* WidgetGeneralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91E61927C94C3A006D6B47 /* WidgetGeneralModel.swift */; };
-		3FC8222927C6C94000B4DC03 /* WidgetQuickAcccesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8222227C6C94000B4DC03 /* WidgetQuickAcccesPresenter.swift */; };
-		3FC8222A27C6C94000B4DC03 /* WidgetQuickAcccesLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8222327C6C94000B4DC03 /* WidgetQuickAcccesLocalDataManager.swift */; };
-		3FC8222B27C6C94000B4DC03 /* WidgetQuickAcccesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8222427C6C94000B4DC03 /* WidgetQuickAcccesProtocols.swift */; };
-		3FC8222C27C6C94000B4DC03 /* WidgetQuickAcccesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8222527C6C94000B4DC03 /* WidgetQuickAcccesInteractor.swift */; };
-		3FC8222D27C6C94000B4DC03 /* WidgetQuickAcccesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8222627C6C94000B4DC03 /* WidgetQuickAcccesView.swift */; };
-		3FC8222E27C6C94000B4DC03 /* WidgetQuickAcccesRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8222727C6C94000B4DC03 /* WidgetQuickAcccesRemoteDataManager.swift */; };
-		3FC8222F27C6C94000B4DC03 /* WidgetQuickAcccesWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8222827C6C94000B4DC03 /* WidgetQuickAcccesWireFrame.swift */; };
 		3FC8223127C6F84C00B4DC03 /* WidgetBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8223027C6F84C00B4DC03 /* WidgetBannerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F05335B27D1467300E4AE23 /* WidgetQuickAccessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetQuickAccessModel.swift; sourceTree = "<group>"; };
+		3F05335D27D15B6600E4AE23 /* WidgetQuickAccessPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetQuickAccessPresenter.swift; sourceTree = "<group>"; };
+		3F05335F27D15B6600E4AE23 /* WidgetQuickAccessProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetQuickAccessProtocols.swift; sourceTree = "<group>"; };
+		3F05336027D15B6600E4AE23 /* WidgetQuickAccessInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetQuickAccessInteractor.swift; sourceTree = "<group>"; };
+		3F05336127D15B6600E4AE23 /* WidgetQuickAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetQuickAccessView.swift; sourceTree = "<group>"; };
+		3F05336327D15B6600E4AE23 /* WidgetQuickAccessWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetQuickAccessWireFrame.swift; sourceTree = "<group>"; };
 		3F2C74EA27C43F9A0050A8A4 /* HomeClaroPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeClaroPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F2C74ED27C43F9A0050A8A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F2C74EF27C43F9A0050A8A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,13 +75,6 @@
 		3F78BADD27C6BB73001743F3 /* WidgetBannerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBannerInteractor.swift; sourceTree = "<group>"; };
 		3F91E61727C946FE006D6B47 /* WidgetGeneralCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetGeneralCell.swift; sourceTree = "<group>"; };
 		3F91E61927C94C3A006D6B47 /* WidgetGeneralModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetGeneralModel.swift; sourceTree = "<group>"; };
-		3FC8222227C6C94000B4DC03 /* WidgetQuickAcccesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetQuickAcccesPresenter.swift; sourceTree = "<group>"; };
-		3FC8222327C6C94000B4DC03 /* WidgetQuickAcccesLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetQuickAcccesLocalDataManager.swift; sourceTree = "<group>"; };
-		3FC8222427C6C94000B4DC03 /* WidgetQuickAcccesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetQuickAcccesProtocols.swift; sourceTree = "<group>"; };
-		3FC8222527C6C94000B4DC03 /* WidgetQuickAcccesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetQuickAcccesInteractor.swift; sourceTree = "<group>"; };
-		3FC8222627C6C94000B4DC03 /* WidgetQuickAcccesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetQuickAcccesView.swift; sourceTree = "<group>"; };
-		3FC8222727C6C94000B4DC03 /* WidgetQuickAcccesRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetQuickAcccesRemoteDataManager.swift; sourceTree = "<group>"; };
-		3FC8222827C6C94000B4DC03 /* WidgetQuickAcccesWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetQuickAcccesWireFrame.swift; sourceTree = "<group>"; };
 		3FC8223027C6F84C00B4DC03 /* WidgetBannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBannerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,13 +153,12 @@
 		3F98C72127C57D9200FD0CB1 /* WidgetQuickAccess */ = {
 			isa = PBXGroup;
 			children = (
-				3FC8222227C6C94000B4DC03 /* WidgetQuickAcccesPresenter.swift */,
-				3FC8222327C6C94000B4DC03 /* WidgetQuickAcccesLocalDataManager.swift */,
-				3FC8222427C6C94000B4DC03 /* WidgetQuickAcccesProtocols.swift */,
-				3FC8222527C6C94000B4DC03 /* WidgetQuickAcccesInteractor.swift */,
-				3FC8222627C6C94000B4DC03 /* WidgetQuickAcccesView.swift */,
-				3FC8222727C6C94000B4DC03 /* WidgetQuickAcccesRemoteDataManager.swift */,
-				3FC8222827C6C94000B4DC03 /* WidgetQuickAcccesWireFrame.swift */,
+				3F05335B27D1467300E4AE23 /* WidgetQuickAccessModel.swift */,
+				3F05335D27D15B6600E4AE23 /* WidgetQuickAccessPresenter.swift */,
+				3F05336027D15B6600E4AE23 /* WidgetQuickAccessInteractor.swift */,
+				3F05336127D15B6600E4AE23 /* WidgetQuickAccessView.swift */,
+				3F05335F27D15B6600E4AE23 /* WidgetQuickAccessProtocols.swift */,
+				3F05336327D15B6600E4AE23 /* WidgetQuickAccessWireFrame.swift */,
 			);
 			name = WidgetQuickAccess;
 			sourceTree = "<group>";
@@ -251,21 +248,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FC8222F27C6C94000B4DC03 /* WidgetQuickAcccesWireFrame.swift in Sources */,
 				3F42DDAF27C821CB0086A2FA /* WidgetGeneralPresenter.swift in Sources */,
 				3F91E61A27C94C3A006D6B47 /* WidgetGeneralModel.swift in Sources */,
-				3FC8222D27C6C94000B4DC03 /* WidgetQuickAcccesView.swift in Sources */,
+				3F05336727D15B6600E4AE23 /* WidgetQuickAccessInteractor.swift in Sources */,
 				3F78BAE227C6BB73001743F3 /* WidgetBannerInteractor.swift in Sources */,
 				3F2C74F227C43F9A0050A8A4 /* ViewController.swift in Sources */,
+				3F05336627D15B6600E4AE23 /* WidgetQuickAccessProtocols.swift in Sources */,
 				3F78BADF27C6BB73001743F3 /* WidgetBannerPresenter.swift in Sources */,
 				3F42DDB127C821CB0086A2FA /* WidgetGeneralProtocols.swift in Sources */,
+				3F05335C27D1467300E4AE23 /* WidgetQuickAccessModel.swift in Sources */,
+				3F05336427D15B6600E4AE23 /* WidgetQuickAccessPresenter.swift in Sources */,
 				3F2C74EE27C43F9A0050A8A4 /* AppDelegate.swift in Sources */,
-				3FC8222927C6C94000B4DC03 /* WidgetQuickAcccesPresenter.swift in Sources */,
 				3F42DDB227C821CB0086A2FA /* WidgetGeneralInteractor.swift in Sources */,
-				3FC8222C27C6C94000B4DC03 /* WidgetQuickAcccesInteractor.swift in Sources */,
 				3F2C750E27C478500050A8A4 /* NetworkManager.swift in Sources */,
 				3F2C750827C440640050A8A4 /* HomeRouter.swift in Sources */,
-				3FC8222E27C6C94000B4DC03 /* WidgetQuickAcccesRemoteDataManager.swift in Sources */,
 				3F2C74F027C43F9A0050A8A4 /* SceneDelegate.swift in Sources */,
 				3F78BAE127C6BB73001743F3 /* WidgetBannerViewController.swift in Sources */,
 				3F78BADE27C6BB73001743F3 /* WidgetBannerProtocols.swift in Sources */,
@@ -273,14 +269,14 @@
 				3F78BAE027C6BB73001743F3 /* WidgetBannerRouter.swift in Sources */,
 				3F91E61827C946FE006D6B47 /* WidgetGeneralCell.swift in Sources */,
 				3F42DDB327C821CB0086A2FA /* WidgetGeneralView.swift in Sources */,
-				3FC8222B27C6C94000B4DC03 /* WidgetQuickAcccesProtocols.swift in Sources */,
 				3F2C750A27C440950050A8A4 /* HomeProtocols.swift in Sources */,
 				3F2C750427C440320050A8A4 /* HomeInteractor.swift in Sources */,
+				3F05336827D15B6600E4AE23 /* WidgetQuickAccessView.swift in Sources */,
 				3F42DDB527C821CB0086A2FA /* WidgetGeneralWireFrame.swift in Sources */,
 				3F2C750227C440250050A8A4 /* HomePresenter.swift in Sources */,
+				3F05336A27D15B6600E4AE23 /* WidgetQuickAccessWireFrame.swift in Sources */,
 				3FC8223127C6F84C00B4DC03 /* WidgetBannerModel.swift in Sources */,
 				3F2C750627C440510050A8A4 /* HomeViewController.swift in Sources */,
-				3FC8222A27C6C94000B4DC03 /* WidgetQuickAcccesLocalDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

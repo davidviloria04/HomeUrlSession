@@ -11,6 +11,7 @@ class WidgetGeneralCell: UICollectionViewCell {
     
     static let identifier = "WidgetGeneralCell"
     
+    
     private let icon: UIImageView = {
         let image = UIImageView()
         image.image = UIImage(systemName: "house")

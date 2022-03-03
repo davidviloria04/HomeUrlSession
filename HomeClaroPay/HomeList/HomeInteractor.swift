@@ -8,9 +8,6 @@
 import Foundation
 
 class HomeInteractor: HomeInteractorProtocol{
-    
-    
-
     var presenter: HomePresenterProtocol?
     var data: [Widget]?
     

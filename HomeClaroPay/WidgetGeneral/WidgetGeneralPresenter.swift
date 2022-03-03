@@ -24,13 +24,12 @@ class WidgetGeneralPresenter  {
 }
 
 extension WidgetGeneralPresenter: WidgetGeneralPresenterProtocol {
-
-    func getdata() -> [WidgetGeneral]?{
-        return interactor?.getWidgets()
+    func getData() -> [WidgetGeneral]? {
+        interactor?.getWidgets()
     }
     
-    func getHomeData() {
-        interactor?.fetchHomeData(){ data, error in
+    func getWidgetGeneralData() {
+        interactor?.fetchWidgetsGeneral(){ data, error in
             if let err = error {
                 print(">>>>> \(err)")
                 self.view?.error(error: err.localizedDescription)

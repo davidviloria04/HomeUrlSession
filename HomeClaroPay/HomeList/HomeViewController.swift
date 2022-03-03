@@ -11,7 +11,6 @@ import UIKit
 class HomeViewController: UIViewController{
     
     var presenter: HomePresenterProtocol?
-    
     @IBOutlet weak var stackView: UIStackView!
     
     override func viewDidLoad() {
@@ -54,5 +53,4 @@ extension HomeViewController: HomeViewControllerProtocol{
             self.present(alert, animated: true)
         }
     }
-
 }

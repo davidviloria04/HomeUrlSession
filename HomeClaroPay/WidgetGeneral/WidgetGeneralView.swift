@@ -46,17 +46,16 @@ class WidgetGeneralView: UIViewController {
 
 extension WidgetGeneralView: WidgetGeneralViewProtocol, UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 9
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WidgetGeneralCell.identifier, for: indexPath)        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WidgetGeneralCell", for: indexPath)
         return cell
     }
     
     func succes() {
         print(">>>>> Succes")
-        
     }
     
     func error(error: String) {
