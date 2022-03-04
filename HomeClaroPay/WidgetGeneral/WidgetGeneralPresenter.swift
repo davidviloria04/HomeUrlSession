@@ -35,8 +35,8 @@ extension WidgetGeneralPresenter: WidgetGeneralPresenterProtocol {
                 self.view?.error(error: err.localizedDescription)
                 return
             }
-            if data != nil {
-                print(">>>>> Succes")
+            if let data = data {
+                print(">>>>> Succes \(data)")
                 self.view?.succes()
                 return
             }

@@ -10,32 +10,16 @@ import Foundation
 import UIKit
 
 class WidgetQuickAccessWireFrame: WidgetQuickAccessWireFrameProtocol {
+    static func createWidgetQuickAccessModule() -> UIViewController {
+        let view = WidgetQuickAccessView(nibName: nil, bundle: nil)
+        let interactor = WidgetQuickAccessInteractor()
+        let wireframe = WidgetQuickAccessWireFrame()
+        let presenter = WidgetQuickAccessPresenter(view: view, interactor: interactor, wireframe: wireframe)
 
-    class func createWidgetQuickAccessModule() -> UIViewController {
-        let navController = mainStoryboard.instantiateViewController(withIdentifier: "WidgetQuickAccessView")
-        if let view = navController.children.first as? WidgetQuickAccessView {
-            let presenter: WidgetQuickAccessPresenterProtocol & WidgetQuickAccessInteractorOutputProtocol = WidgetQuickAccessPresenter()
-            let interactor: WidgetQuickAccessInteractorInputProtocol & WidgetQuickAccessRemoteDataManagerOutputProtocol = WidgetQuickAccessInteractor()
-            let localDataManager: WidgetQuickAccessLocalDataManagerInputProtocol = WidgetQuickAccessLocalDataManager()
-            let remoteDataManager: WidgetQuickAccessRemoteDataManagerInputProtocol = WidgetQuickAccessRemoteDataManager()
-            let wireFrame: WidgetQuickAccessWireFrameProtocol = WidgetQuickAccessWireFrame()
-            
-            view.presenter = presenter
-            presenter.view = view
-            presenter.wireFrame = wireFrame
-            presenter.interactor = interactor
-            interactor.presenter = presenter
-            interactor.localDatamanager = localDataManager
-            interactor.remoteDatamanager = remoteDataManager
-            remoteDataManager.remoteRequestHandler = interactor
-            
-            return navController
-        }
-        return UIViewController()
+        view.presenter = presenter
+        presenter.wireFrame = wireframe
+        presenter.view = view
+        presenter.interactor = interactor
+        return view
     }
-    
-    static var mainStoryboard: UIStoryboard {
-        return UIStoryboard(name: "WidgetQuickAccessView", bundle: Bundle.main)
-    }
-    
 }

@@ -7,22 +7,46 @@
 //
 
 import Foundation
+import UIKit
 
 class WidgetQuickAccessPresenter  {
     
     // MARK: Properties
     weak var view: WidgetQuickAccessViewProtocol?
-    var interactor: WidgetQuickAccessInteractorInputProtocol?
+    var interactor: WidgetQuickAccessInteractorProtocol?
     var wireFrame: WidgetQuickAccessWireFrameProtocol?
+    
+    init(view: WidgetQuickAccessView, interactor: WidgetQuickAccessInteractor, wireframe: WidgetQuickAccessWireFrame) {
+        self.view = view
+        self.interactor = interactor
+        self.wireFrame = wireframe
+    }
     
 }
 
 extension WidgetQuickAccessPresenter: WidgetQuickAccessPresenterProtocol {
+    
+    func widgetQuickAccessData() {
+        interactor?.fetchWidgetsQuickAccess(){ data, error in
+            if let err = error {
+                print(">>>>> \(err)")
+                self.view?.error(error: err.localizedDescription)
+                return
+            }
+            if let data = data {
+                print(">>>>> Succes \(data)")
+                self.view?.succes()
+                return
+            }
+            
+        }
+    }
+    
+    func getData() -> [WidgetQuickAccess]? {
+        interactor?.getWidgetsQA()
+    }
+    
     // TODO: implement presenter methods
     func viewDidLoad() {
     }
-}
-
-extension WidgetQuickAccessPresenter: WidgetQuickAccessInteractorOutputProtocol {
-    // TODO: implement interactor output methods
 }

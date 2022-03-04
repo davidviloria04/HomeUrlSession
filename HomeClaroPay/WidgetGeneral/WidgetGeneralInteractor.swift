@@ -19,7 +19,7 @@ class WidgetGeneralInteractor: WidgetGeneralInteractorProtocol {
     }
     
     func fetchWidgetsGeneral(callBack: @escaping (_ data: Any?, _ error: Error?) -> Void) -> Void{
-        NetworkManager.request(url: "http://192.168.0.12:3000/ClaroPay-WS/widget?id=WIDGET_GENERAL", method: "GET", type: WidgetGeneral.self) { data, error in
+        NetworkManager.request(url: "http://192.168.0.12:3000/ClaroPay-WS/widget?id=WIDGET_GENERAL", method: "GET", type: WidgetGeneralResponse.self) { data, error in
             callBack(data, error)
         }
     }

@@ -1,27 +1,27 @@
 //
-//  WidgetGeneralCell.swift
+//  WidgetQuickAccessCell.swift
 //  HomeClaroPay
 //
-//  Created by David Viloria Ortega on 25/02/22.
+//  Created by David Viloria Ortega on 3/03/22.
 //
 
+import Foundation
 import UIKit
 
-class WidgetGeneralCell: UICollectionViewCell {
-    
+class WidgetQuickAccessCell: UICollectionViewCell {
     static let identifier = "WidgetGeneralCell"
     
     
     private let icon: UIImageView = {
         let image = UIImageView()
-        image.image = UIImage(systemName: "house")
+        image.image = UIImage(systemName: "flame.fill")
         image.contentMode = .scaleAspectFit
         return image
     }()
     
     private let type: UILabel = {
         let typeLabel = UILabel()
-        typeLabel.text = "Custom 2"
+        typeLabel.text = "WidgetQuickAccess"
         typeLabel.textAlignment = .center
         return typeLabel
     }()

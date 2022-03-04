@@ -32,6 +32,7 @@ extension HomeViewController: HomeViewControllerProtocol{
             guard let items = self.presenter?.getdata() else{
                 return
             }
+            
             for item in items {
                 switch item.type{
                 case "WIDGET_GENERAL":
@@ -39,8 +40,13 @@ extension HomeViewController: HomeViewControllerProtocol{
                         self.addChild(widgetGeneralView)
                         self.stackView.addSubview(widgetGeneralView.view)
                     }
-                default:
-                    print("No se llama ningun View")
+                case "WIDGET_QUICK_ACCESS":
+                    if let widgetQuickAccess = self.presenter?.createQuickAccessWidget(){
+                        self.stackView.addSubview(widgetQuickAccess.view)
+                        self.addChild(widgetQuickAccess)
+                    }
+                default :
+                    print("No se generó ninguna vista")
                 }
             }
         }

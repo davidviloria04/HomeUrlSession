@@ -13,6 +13,7 @@
 		3F05336727D15B6600E4AE23 /* WidgetQuickAccessInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05336027D15B6600E4AE23 /* WidgetQuickAccessInteractor.swift */; };
 		3F05336827D15B6600E4AE23 /* WidgetQuickAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05336127D15B6600E4AE23 /* WidgetQuickAccessView.swift */; };
 		3F05336A27D15B6600E4AE23 /* WidgetQuickAccessWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05336327D15B6600E4AE23 /* WidgetQuickAccessWireFrame.swift */; };
+		3F05336C27D15CF900E4AE23 /* WidgetQuickAccessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05336B27D15CF900E4AE23 /* WidgetQuickAccessCell.swift */; };
 		3F2C74EE27C43F9A0050A8A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2C74ED27C43F9A0050A8A4 /* AppDelegate.swift */; };
 		3F2C74F027C43F9A0050A8A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2C74EF27C43F9A0050A8A4 /* SceneDelegate.swift */; };
 		3F2C74F227C43F9A0050A8A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2C74F127C43F9A0050A8A4 /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 		3F05336027D15B6600E4AE23 /* WidgetQuickAccessInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetQuickAccessInteractor.swift; sourceTree = "<group>"; };
 		3F05336127D15B6600E4AE23 /* WidgetQuickAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetQuickAccessView.swift; sourceTree = "<group>"; };
 		3F05336327D15B6600E4AE23 /* WidgetQuickAccessWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetQuickAccessWireFrame.swift; sourceTree = "<group>"; };
+		3F05336B27D15CF900E4AE23 /* WidgetQuickAccessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetQuickAccessCell.swift; sourceTree = "<group>"; };
 		3F2C74EA27C43F9A0050A8A4 /* HomeClaroPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeClaroPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F2C74ED27C43F9A0050A8A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F2C74EF27C43F9A0050A8A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,12 +155,13 @@
 		3F98C72127C57D9200FD0CB1 /* WidgetQuickAccess */ = {
 			isa = PBXGroup;
 			children = (
-				3F05335B27D1467300E4AE23 /* WidgetQuickAccessModel.swift */,
+				3F05336B27D15CF900E4AE23 /* WidgetQuickAccessCell.swift */,
+				3F05336127D15B6600E4AE23 /* WidgetQuickAccessView.swift */,
 				3F05335D27D15B6600E4AE23 /* WidgetQuickAccessPresenter.swift */,
 				3F05336027D15B6600E4AE23 /* WidgetQuickAccessInteractor.swift */,
-				3F05336127D15B6600E4AE23 /* WidgetQuickAccessView.swift */,
 				3F05335F27D15B6600E4AE23 /* WidgetQuickAccessProtocols.swift */,
 				3F05336327D15B6600E4AE23 /* WidgetQuickAccessWireFrame.swift */,
+				3F05335B27D1467300E4AE23 /* WidgetQuickAccessModel.swift */,
 			);
 			name = WidgetQuickAccess;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				3F2C750427C440320050A8A4 /* HomeInteractor.swift in Sources */,
 				3F05336827D15B6600E4AE23 /* WidgetQuickAccessView.swift in Sources */,
 				3F42DDB527C821CB0086A2FA /* WidgetGeneralWireFrame.swift in Sources */,
+				3F05336C27D15CF900E4AE23 /* WidgetQuickAccessCell.swift in Sources */,
 				3F2C750227C440250050A8A4 /* HomePresenter.swift in Sources */,
 				3F05336A27D15B6600E4AE23 /* WidgetQuickAccessWireFrame.swift in Sources */,
 				3FC8223127C6F84C00B4DC03 /* WidgetBannerModel.swift in Sources */,

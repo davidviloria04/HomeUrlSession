@@ -32,6 +32,10 @@ class HomePresenter  {
 }
 
 extension HomePresenter: HomePresenterProtocol {
+    func createQuickAccessWidget() -> UIViewController {
+        return WidgetQuickAccessWireFrame.createWidgetQuickAccessModule()
+    }
+    
     
     
     func createGeneralWidget() -> UIViewController {

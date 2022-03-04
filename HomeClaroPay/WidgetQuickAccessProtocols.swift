@@ -25,17 +25,15 @@ protocol WidgetQuickAccessWireFrameProtocol: AnyObject {
 protocol WidgetQuickAccessPresenterProtocol: AnyObject {
     // VIEW -> PRESENTER
     var view: WidgetQuickAccessViewProtocol? { get set }
-    var interactor: WidgetQuickAccessInteractorInputProtocol? { get set }
+    var interactor: WidgetQuickAccessInteractorProtocol? { get set }
     var wireFrame: WidgetQuickAccessWireFrameProtocol? { get set }
     
-    func viewDidLoad()
+    func widgetQuickAccessData() -> Void
+    func getData() -> [WidgetQuickAccess]?
 }
 
-protocol WidgetQuickAccessInteractorOutputProtocol: AnyObject {
-// INTERACTOR -> PRESENTER
-}
-
-protocol WidgetQuickAccessInteractorInputProtocol: AnyObject {
-    // PRESENTER -> INTERACTOR
-    var presenter: WidgetQuickAccessInteractorOutputProtocol? { get set }
+protocol WidgetQuickAccessInteractorProtocol: AnyObject {
+    var presenter: WidgetQuickAccessInteractorProtocol? { get set }
+    func fetchWidgetsQuickAccess(callBack: @escaping (_ data: Any?, _ error: Error?) -> Void) -> Void
+    func getWidgetsQA() -> [WidgetQuickAccess]?
 }

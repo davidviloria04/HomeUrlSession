@@ -30,7 +30,9 @@ protocol HomePresenterProtocol: AnyObject{
     
     func getHomeData() -> Void
     func getdata() -> [Widget]?
+    
     func createGeneralWidget() -> UIViewController
+    func createQuickAccessWidget() -> UIViewController
 
 }
 
