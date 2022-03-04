@@ -8,15 +8,19 @@
 
 import Foundation
 
-class WidgetQuickAccessInteractor: WidgetQuickAccessInteractorInputProtocol {
+class WidgetQuickAccessInteractor: WidgetQuickAccessInteractorProtocol {
 
     // MARK: Properties
-    weak var presenter: WidgetQuickAccessInteractorOutputProtocol?
-    var localDatamanager: WidgetQuickAccessLocalDataManagerInputProtocol?
-    var remoteDatamanager: WidgetQuickAccessRemoteDataManagerInputProtocol?
+    weak var presenter: WidgetQuickAccessInteractorProtocol?
+    var data: [WidgetQuickAccess]?
 
-}
-
-extension WidgetQuickAccessInteractor: WidgetQuickAccessRemoteDataManagerOutputProtocol {
-    // TODO: Implement use case methods
+    func fetchWidgetsQuickAccess(callBack: @escaping (_ data: Any?, _ error: Error?) -> Void) -> Void{
+        NetworkManager.request(url: "http://192.168.0.12:3000/ClaroPay-WS/service?category=HOME", method: "GET", type: WidgetQuickAccessResponse.self) { data, error in
+            callBack(data, error)
+        }
+    }
+    
+    func getWidgetsQA() -> [WidgetQuickAccess]? {
+        return data
+    }
 }
