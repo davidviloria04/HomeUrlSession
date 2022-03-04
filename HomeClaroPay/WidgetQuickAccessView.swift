@@ -32,7 +32,7 @@ class WidgetQuickAccessView: UIViewController {
         guard let collectionView = collectionView else {
             return
         }
-        collectionView.register(WidgetGeneralCell.self, forCellWithReuseIdentifier: WidgetGeneralCell.identifier)
+        collectionView.register(WidgetGeneralCell.self, forCellWithReuseIdentifier: WidgetQuickAccessCell.identifier)
         collectionView.delegate = self
         collectionView.dataSource = self
         view.addSubview(collectionView)
@@ -43,7 +43,7 @@ class WidgetQuickAccessView: UIViewController {
 
 extension WidgetQuickAccessView: WidgetQuickAccessViewProtocol, UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -62,6 +62,4 @@ extension WidgetQuickAccessView: WidgetQuickAccessViewProtocol, UICollectionView
             self.present(alert, animated: true)
         }
     }
-    
-    // TODO: implement view output methods
 }

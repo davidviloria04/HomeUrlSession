@@ -9,8 +9,8 @@ import Foundation
 import UIKit
 
 class WidgetQuickAccessCell: UICollectionViewCell {
-    static let identifier = "WidgetGeneralCell"
     
+    static let identifier = "WidgetQuickAccessCell"
     
     private let icon: UIImageView = {
         let image = UIImageView()
@@ -28,7 +28,7 @@ class WidgetQuickAccessCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        contentView.backgroundColor = .systemGray
+        contentView.backgroundColor = .cyan
         contentView.addSubview(type)
         contentView.addSubview(icon)
         contentView.clipsToBounds = true

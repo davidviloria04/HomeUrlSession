@@ -39,11 +39,13 @@ extension HomeViewController: HomeViewControllerProtocol{
                     if let widgetGeneralView = self.presenter?.createGeneralWidget(){
                         self.addChild(widgetGeneralView)
                         self.stackView.addSubview(widgetGeneralView.view)
+                        
                     }
                 case "WIDGET_QUICK_ACCESS":
                     if let widgetQuickAccess = self.presenter?.createQuickAccessWidget(){
                         self.stackView.addSubview(widgetQuickAccess.view)
                         self.addChild(widgetQuickAccess)
+                        
                     }
                 default :
                     print("No se generó ninguna vista")

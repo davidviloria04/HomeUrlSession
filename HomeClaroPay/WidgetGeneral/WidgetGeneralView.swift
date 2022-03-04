@@ -39,7 +39,6 @@ class WidgetGeneralView: UIViewController {
         
         collectionView.frame = view.bounds
     }
-  
 }
 
 extension WidgetGeneralView: WidgetGeneralViewProtocol, UICollectionViewDelegate, UICollectionViewDataSource{
