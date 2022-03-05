@@ -16,8 +16,8 @@ struct WidgetGeneralResponse: Codable{
 }
 
 struct WidgetGeneral: Codable{
-    var type: String
-    var icon: String
-    var promoIcon: String
-    var backgroundColor: String
+    var type: String?
+    var icon: String?
+    var promoIcon: String?
+    var backgroundColor: String?
 }
