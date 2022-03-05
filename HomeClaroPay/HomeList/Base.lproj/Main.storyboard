@@ -16,18 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="217" translatesAutoresizingMaskIntoConstraints="NO" id="TcI-hS-zAi">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHF-mX-Zlf">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
-                            </stackView>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="TcI-hS-zAi">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="TcI-hS-zAi" firstAttribute="leading" secondItem="NXu-zI-BcH" secondAttribute="leading" id="3Pe-D6-GDj"/>
+                                    <constraint firstItem="TXF-Xg-JAF" firstAttribute="bottom" secondItem="TcI-hS-zAi" secondAttribute="bottom" id="JqB-5p-24g"/>
+                                    <constraint firstItem="TcI-hS-zAi" firstAttribute="top" secondItem="NXu-zI-BcH" secondAttribute="top" id="Kz5-s8-beV"/>
+                                    <constraint firstItem="TcI-hS-zAi" firstAttribute="width" secondItem="TXF-Xg-JAF" secondAttribute="width" id="T7D-a1-Pat"/>
+                                    <constraint firstItem="TcI-hS-zAi" firstAttribute="trailing" secondItem="NXu-zI-BcH" secondAttribute="trailing" id="Z49-ma-oEG"/>
+                                    <constraint firstItem="TcI-hS-zAi" firstAttribute="bottom" secondItem="NXu-zI-BcH" secondAttribute="bottom" id="mfp-O6-hRz"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="NXu-zI-BcH"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="TXF-Xg-JAF"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="TcI-hS-zAi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Gca-og-4kS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TcI-hS-zAi" secondAttribute="bottom" id="Ry6-Fp-fKb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TcI-hS-zAi" secondAttribute="trailing" id="TbK-Ik-oRO"/>
-                            <constraint firstItem="TcI-hS-zAi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mnd-ra-s0d"/>
+                            <constraint firstItem="JHF-mX-Zlf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dD0-Uj-zqu"/>
+                            <constraint firstItem="JHF-mX-Zlf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fCv-Kk-bb9"/>
+                            <constraint firstItem="JHF-mX-Zlf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="l6L-h1-dnn"/>
+                            <constraint firstItem="JHF-mX-Zlf" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yTG-1K-EHZ"/>
                         </constraints>
                     </view>
                     <connections>

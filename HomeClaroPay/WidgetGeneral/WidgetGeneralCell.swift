@@ -12,14 +12,14 @@ class WidgetGeneralCell: UICollectionViewCell {
     static let identifier = "WidgetGeneralCell"
     
     
-    private let icon: UIImageView = {
+    let icon: UIImageView = {
         let image = UIImageView()
         image.image = UIImage(systemName: "house")
         image.contentMode = .scaleAspectFit
         return image
     }()
     
-    private let type: UILabel = {
+    let type: UILabel = {
         let typeLabel = UILabel()
         typeLabel.text = "Custom 2"
         typeLabel.textAlignment = .center
