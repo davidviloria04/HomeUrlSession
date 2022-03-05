@@ -32,7 +32,7 @@ class WidgetQuickAccessView: UIViewController {
         guard let collectionView = collectionView else {
             return
         }
-        collectionView.register(WidgetGeneralCell.self, forCellWithReuseIdentifier: WidgetQuickAccessCell.identifier)
+        collectionView.register(WidgetQuickAccessCell.self, forCellWithReuseIdentifier: WidgetQuickAccessCell.identifier)
         collectionView.delegate = self
         collectionView.dataSource = self
         view.addSubview(collectionView)
