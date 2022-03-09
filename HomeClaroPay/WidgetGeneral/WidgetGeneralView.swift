@@ -20,7 +20,6 @@ class WidgetGeneralView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         layout.minimumLineSpacing = 1
@@ -30,7 +29,7 @@ class WidgetGeneralView: UIViewController {
         
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
 
-        guard let collectionView = collectionView else {
+        guard let collectionView = self.collectionView else {
             return
         }
         collectionView.register(WidgetGeneralCell.self, forCellWithReuseIdentifier: WidgetGeneralCell.identifier)

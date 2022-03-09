@@ -28,12 +28,13 @@ protocol WidgetQuickAccessPresenterProtocol: AnyObject {
     var interactor: WidgetQuickAccessInteractorProtocol? { get set }
     var wireFrame: WidgetQuickAccessWireFrameProtocol? { get set }
     
-    func widgetQuickAccessData() -> Void
+    func getWidgetQuickAccessData() -> Void
     func getData() -> [WidgetQuickAccess]?
 }
 
 protocol WidgetQuickAccessInteractorProtocol: AnyObject {
     var presenter: WidgetQuickAccessInteractorProtocol? { get set }
+    
     func fetchWidgetsQuickAccess(callBack: @escaping (_ data: Any?, _ error: Error?) -> Void) -> Void
     func getWidgetsQA() -> [WidgetQuickAccess]?
 }

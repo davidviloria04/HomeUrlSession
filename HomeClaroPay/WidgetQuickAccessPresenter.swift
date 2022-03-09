@@ -26,7 +26,7 @@ class WidgetQuickAccessPresenter  {
 
 extension WidgetQuickAccessPresenter: WidgetQuickAccessPresenterProtocol {
     
-    func widgetQuickAccessData() {
+    func getWidgetQuickAccessData() {
         interactor?.fetchWidgetsQuickAccess(){ data, error in
             if let err = error {
                 print(">>>>> \(err)")
@@ -38,15 +38,9 @@ extension WidgetQuickAccessPresenter: WidgetQuickAccessPresenterProtocol {
                 self.view?.succes()
                 return
             }
-            
         }
     }
-    
     func getData() -> [WidgetQuickAccess]? {
         interactor?.getWidgetsQA()
-    }
-    
-    // TODO: implement presenter methods
-    func viewDidLoad() {
     }
 }

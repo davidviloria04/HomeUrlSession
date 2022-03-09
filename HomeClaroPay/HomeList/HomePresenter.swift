@@ -36,10 +36,11 @@ extension HomePresenter: HomePresenterProtocol {
         return WidgetQuickAccessWireFrame.createWidgetQuickAccessModule()
     }
     
-    
-    
     func createGeneralWidget() -> UIViewController {
         return WidgetGeneralWireFrame.createWidgetGeneralModule()
+    }
+    func createBannerWidget() -> UIViewController {
+        return WidgetBannerWireFrame.createWidgetBannerModule()
     }
     
     func getdata() -> [Widget]?{

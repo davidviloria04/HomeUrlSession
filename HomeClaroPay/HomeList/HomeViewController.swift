@@ -43,6 +43,14 @@ extension HomeViewController: HomeViewControllerProtocol{
                         self.stackView.addArrangedSubview(widgetGeneralView.view)
                         widgetGeneralView.view.layoutIfNeeded()
                     }
+                case "WIDGET_BANNER":
+                    if let widgetBannerView = self.presenter?.createBannerWidget(){
+                        self.addChild(widgetBannerView)
+                        let constraintsHeight = widgetBannerView.view.heightAnchor.constraint(lessThanOrEqualToConstant: 900)
+                        constraintsHeight.isActive = true
+                        self.stackView.addArrangedSubview(widgetBannerView.view)
+                        widgetBannerView.view.layoutIfNeeded()
+                    }
                 case "WIDGET_QUICK_ACCESS":
                     if let widgetQuickAccess = self.presenter?.createQuickAccessWidget(){
                         self.addChild(widgetQuickAccess)

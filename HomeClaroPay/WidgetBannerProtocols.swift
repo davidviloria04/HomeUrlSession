@@ -1,43 +1,42 @@
 //
-//  WidgetBannerContract.swift
+//  WidgetBannerProtocols.swift
 //  HomeClaroPay
 //
-//  Created by David Viloria Ortega on 23/02/22.
+//  Created by David Viloria Ortega on 8/03/22.
 //  
 //
 
 import Foundation
+import UIKit
 
-
-// MARK: View Output (Presenter -> View)
-protocol PresenterToViewWidgetBannerProtocol {
-   
-}
-
-
-// MARK: View Input (View -> Presenter)
-protocol ViewToPresenterWidgetBannerProtocol {
+protocol WidgetBannerViewProtocol: AnyObject {
+    // PRESENTER -> VIEW
+    var presenter: WidgetBannerPresenterProtocol? { get set }
     
-    var view: PresenterToViewWidgetBannerProtocol? { get set }
-    var interactor: PresenterToInteractorWidgetBannerProtocol? { get set }
-    var router: PresenterToRouterWidgetBannerProtocol? { get set }
+    func succes()
+    func error(error: String)
 }
 
+protocol WidgetBannerWireFrameProtocol: AnyObject {
+    // PRESENTER -> WIREFRAME
+    static func createWidgetBannerModule() -> UIViewController
+}
 
-// MARK: Interactor Input (Presenter -> Interactor)
-protocol PresenterToInteractorWidgetBannerProtocol {
+protocol WidgetBannerPresenterProtocol: AnyObject {
+    // VIEW -> PRESENTER
+    var view: WidgetBannerViewProtocol? { get set }
+    var interactor: WidgetBannerInteractorProtocol? { get set }
+    var wireFrame: WidgetBannerWireFrameProtocol? { get set }
     
-    var presenter: InteractorToPresenterWidgetBannerProtocol? { get set }
-}
-
-
-// MARK: Interactor Output (Interactor -> Presenter)
-protocol InteractorToPresenterWidgetBannerProtocol {
+    func getWidgetBannerData() -> Void
+    func getData() -> [WidgetBanner]?
     
 }
 
-
-// MARK: Router Input (Presenter -> Router)
-protocol PresenterToRouterWidgetBannerProtocol {
+protocol WidgetBannerInteractorProtocol: AnyObject {
+    // PRESENTER -> INTERACTOR
+    var presenter: WidgetBannerInteractorProtocol? { get set }
     
+    func fetchWidgetsBanner(callBack: @escaping(_ data: Any?,_ error: Error?) -> Void) -> Void
+    func getWidgetsBanner() -> [WidgetBanner]?
 }

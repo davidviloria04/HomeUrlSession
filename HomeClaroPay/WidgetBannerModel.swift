@@ -17,7 +17,6 @@ struct BannerResponse: Codable{
 }
 
 struct WidgetBanner: Codable {
-    var type: String?
     var icon: String?
     var promoIcon: String?
     var backgroundColor: String?

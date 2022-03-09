@@ -10,17 +10,17 @@ import Foundation
 import UIKit
 
 class WidgetQuickAccessView: UIViewController {
-
     // MARK: Properties
     var presenter: WidgetQuickAccessPresenterProtocol?
     private var collectionView: UICollectionView?
+    let layout = UICollectionViewFlowLayout()
+
 
     // MARK: Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         layout.minimumLineSpacing = 1
         layout.minimumInteritemSpacing = 1
@@ -38,6 +38,7 @@ class WidgetQuickAccessView: UIViewController {
         view.addSubview(collectionView)
         
         collectionView.frame = view.bounds
+        presenter?.getWidgetQuickAccessData()
     }
 }
 
@@ -47,7 +48,7 @@ extension WidgetQuickAccessView: WidgetQuickAccessViewProtocol, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WidgetQuickAccessCell.identifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WidgetQuickAccessCell.identifier, for: indexPath) as! WidgetQuickAccessCell
         return cell
     }
     

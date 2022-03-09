@@ -32,14 +32,15 @@
 		3F42DDB227C821CB0086A2FA /* WidgetGeneralInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F42DDAB27C821CB0086A2FA /* WidgetGeneralInteractor.swift */; };
 		3F42DDB327C821CB0086A2FA /* WidgetGeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F42DDAC27C821CB0086A2FA /* WidgetGeneralView.swift */; };
 		3F42DDB527C821CB0086A2FA /* WidgetGeneralWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F42DDAE27C821CB0086A2FA /* WidgetGeneralWireFrame.swift */; };
-		3F78BADE27C6BB73001743F3 /* WidgetBannerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78BAD927C6BB73001743F3 /* WidgetBannerProtocols.swift */; };
-		3F78BADF27C6BB73001743F3 /* WidgetBannerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78BADA27C6BB73001743F3 /* WidgetBannerPresenter.swift */; };
-		3F78BAE027C6BB73001743F3 /* WidgetBannerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78BADB27C6BB73001743F3 /* WidgetBannerRouter.swift */; };
-		3F78BAE127C6BB73001743F3 /* WidgetBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78BADC27C6BB73001743F3 /* WidgetBannerViewController.swift */; };
-		3F78BAE227C6BB73001743F3 /* WidgetBannerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78BADD27C6BB73001743F3 /* WidgetBannerInteractor.swift */; };
+		3F4CE20927D7AECA00171088 /* WidgetBannerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CE20227D7AECA00171088 /* WidgetBannerPresenter.swift */; };
+		3F4CE20B27D7AECA00171088 /* WidgetBannerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CE20427D7AECA00171088 /* WidgetBannerProtocols.swift */; };
+		3F4CE20C27D7AECA00171088 /* WidgetBannerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CE20527D7AECA00171088 /* WidgetBannerInteractor.swift */; };
+		3F4CE20D27D7AECA00171088 /* WidgetBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CE20627D7AECA00171088 /* WidgetBannerView.swift */; };
+		3F4CE20F27D7AECA00171088 /* WidgetBannerWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CE20827D7AECA00171088 /* WidgetBannerWireFrame.swift */; };
 		3F91E61827C946FE006D6B47 /* WidgetGeneralCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91E61727C946FE006D6B47 /* WidgetGeneralCell.swift */; };
 		3F91E61A27C94C3A006D6B47 /* WidgetGeneralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91E61927C94C3A006D6B47 /* WidgetGeneralModel.swift */; };
 		3FC8223127C6F84C00B4DC03 /* WidgetBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8223027C6F84C00B4DC03 /* WidgetBannerModel.swift */; };
+		3FD06AD427D8FEA90034A47D /* WidgetBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD06AD327D8FEA90034A47D /* WidgetBannerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,14 +71,15 @@
 		3F42DDAB27C821CB0086A2FA /* WidgetGeneralInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetGeneralInteractor.swift; sourceTree = "<group>"; };
 		3F42DDAC27C821CB0086A2FA /* WidgetGeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetGeneralView.swift; sourceTree = "<group>"; };
 		3F42DDAE27C821CB0086A2FA /* WidgetGeneralWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetGeneralWireFrame.swift; sourceTree = "<group>"; };
-		3F78BAD927C6BB73001743F3 /* WidgetBannerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBannerProtocols.swift; sourceTree = "<group>"; };
-		3F78BADA27C6BB73001743F3 /* WidgetBannerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBannerPresenter.swift; sourceTree = "<group>"; };
-		3F78BADB27C6BB73001743F3 /* WidgetBannerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBannerRouter.swift; sourceTree = "<group>"; };
-		3F78BADC27C6BB73001743F3 /* WidgetBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBannerViewController.swift; sourceTree = "<group>"; };
-		3F78BADD27C6BB73001743F3 /* WidgetBannerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBannerInteractor.swift; sourceTree = "<group>"; };
+		3F4CE20227D7AECA00171088 /* WidgetBannerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBannerPresenter.swift; sourceTree = "<group>"; };
+		3F4CE20427D7AECA00171088 /* WidgetBannerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBannerProtocols.swift; sourceTree = "<group>"; };
+		3F4CE20527D7AECA00171088 /* WidgetBannerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBannerInteractor.swift; sourceTree = "<group>"; };
+		3F4CE20627D7AECA00171088 /* WidgetBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBannerView.swift; sourceTree = "<group>"; };
+		3F4CE20827D7AECA00171088 /* WidgetBannerWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBannerWireFrame.swift; sourceTree = "<group>"; };
 		3F91E61727C946FE006D6B47 /* WidgetGeneralCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetGeneralCell.swift; sourceTree = "<group>"; };
 		3F91E61927C94C3A006D6B47 /* WidgetGeneralModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetGeneralModel.swift; sourceTree = "<group>"; };
 		3FC8223027C6F84C00B4DC03 /* WidgetBannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBannerModel.swift; sourceTree = "<group>"; };
+		3FD06AD327D8FEA90034A47D /* WidgetBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBannerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,11 +144,12 @@
 		3F98C72027C57D8300FD0CB1 /* WidgetBanner */ = {
 			isa = PBXGroup;
 			children = (
-				3F78BAD927C6BB73001743F3 /* WidgetBannerProtocols.swift */,
-				3F78BADA27C6BB73001743F3 /* WidgetBannerPresenter.swift */,
-				3F78BADB27C6BB73001743F3 /* WidgetBannerRouter.swift */,
-				3F78BADC27C6BB73001743F3 /* WidgetBannerViewController.swift */,
-				3F78BADD27C6BB73001743F3 /* WidgetBannerInteractor.swift */,
+				3FD06AD327D8FEA90034A47D /* WidgetBannerCell.swift */,
+				3F4CE20627D7AECA00171088 /* WidgetBannerView.swift */,
+				3F4CE20227D7AECA00171088 /* WidgetBannerPresenter.swift */,
+				3F4CE20427D7AECA00171088 /* WidgetBannerProtocols.swift */,
+				3F4CE20527D7AECA00171088 /* WidgetBannerInteractor.swift */,
+				3F4CE20827D7AECA00171088 /* WidgetBannerWireFrame.swift */,
 				3FC8223027C6F84C00B4DC03 /* WidgetBannerModel.swift */,
 			);
 			name = WidgetBanner;
@@ -254,10 +257,8 @@
 				3F42DDAF27C821CB0086A2FA /* WidgetGeneralPresenter.swift in Sources */,
 				3F91E61A27C94C3A006D6B47 /* WidgetGeneralModel.swift in Sources */,
 				3F05336727D15B6600E4AE23 /* WidgetQuickAccessInteractor.swift in Sources */,
-				3F78BAE227C6BB73001743F3 /* WidgetBannerInteractor.swift in Sources */,
 				3F2C74F227C43F9A0050A8A4 /* ViewController.swift in Sources */,
 				3F05336627D15B6600E4AE23 /* WidgetQuickAccessProtocols.swift in Sources */,
-				3F78BADF27C6BB73001743F3 /* WidgetBannerPresenter.swift in Sources */,
 				3F42DDB127C821CB0086A2FA /* WidgetGeneralProtocols.swift in Sources */,
 				3F05335C27D1467300E4AE23 /* WidgetQuickAccessModel.swift in Sources */,
 				3F05336427D15B6600E4AE23 /* WidgetQuickAccessPresenter.swift in Sources */,
@@ -266,16 +267,19 @@
 				3F2C750E27C478500050A8A4 /* NetworkManager.swift in Sources */,
 				3F2C750827C440640050A8A4 /* HomeRouter.swift in Sources */,
 				3F2C74F027C43F9A0050A8A4 /* SceneDelegate.swift in Sources */,
-				3F78BAE127C6BB73001743F3 /* WidgetBannerViewController.swift in Sources */,
-				3F78BADE27C6BB73001743F3 /* WidgetBannerProtocols.swift in Sources */,
+				3F4CE20D27D7AECA00171088 /* WidgetBannerView.swift in Sources */,
 				3F2C750C27C454510050A8A4 /* ModelHome.swift in Sources */,
-				3F78BAE027C6BB73001743F3 /* WidgetBannerRouter.swift in Sources */,
 				3F91E61827C946FE006D6B47 /* WidgetGeneralCell.swift in Sources */,
+				3F4CE20F27D7AECA00171088 /* WidgetBannerWireFrame.swift in Sources */,
 				3F42DDB327C821CB0086A2FA /* WidgetGeneralView.swift in Sources */,
 				3F2C750A27C440950050A8A4 /* HomeProtocols.swift in Sources */,
 				3F2C750427C440320050A8A4 /* HomeInteractor.swift in Sources */,
+				3F4CE20C27D7AECA00171088 /* WidgetBannerInteractor.swift in Sources */,
+				3FD06AD427D8FEA90034A47D /* WidgetBannerCell.swift in Sources */,
 				3F05336827D15B6600E4AE23 /* WidgetQuickAccessView.swift in Sources */,
 				3F42DDB527C821CB0086A2FA /* WidgetGeneralWireFrame.swift in Sources */,
+				3F4CE20B27D7AECA00171088 /* WidgetBannerProtocols.swift in Sources */,
+				3F4CE20927D7AECA00171088 /* WidgetBannerPresenter.swift in Sources */,
 				3F05336C27D15CF900E4AE23 /* WidgetQuickAccessCell.swift in Sources */,
 				3F2C750227C440250050A8A4 /* HomePresenter.swift in Sources */,
 				3F05336A27D15B6600E4AE23 /* WidgetQuickAccessWireFrame.swift in Sources */,

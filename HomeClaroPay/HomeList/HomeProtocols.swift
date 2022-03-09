@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 protocol HomeViewControllerProtocol: AnyObject {
     // Presenter -> View
     var presenter: HomePresenterProtocol? { get set }
@@ -33,6 +32,7 @@ protocol HomePresenterProtocol: AnyObject{
     
     func createGeneralWidget() -> UIViewController
     func createQuickAccessWidget() -> UIViewController
+    func createBannerWidget() -> UIViewController
 
 }
 
