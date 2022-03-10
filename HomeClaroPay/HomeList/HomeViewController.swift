@@ -13,6 +13,7 @@ class HomeViewController: UIViewController{
     var presenter: HomePresenterProtocol?
     @IBOutlet weak var stackView: UIStackView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,7 +43,6 @@ extension HomeViewController: HomeViewControllerProtocol{
                         constraintsHeight.isActive = true
                         let viewMoreBar = self.createBar(labelText: "Qué quieres hacer hoy?", buttonText: "Ver más")
                                                 self.stackView.addArrangedSubview(viewMoreBar)
-
                         self.stackView.addArrangedSubview(widgetGeneralView.view)
                         widgetGeneralView.view.layoutIfNeeded()
                     }
@@ -85,9 +85,10 @@ extension HomeViewController{
     public func createBar(labelText: String, buttonText: String) -> UIView{
         let barView = UIView(frame: CGRect(x:0, y:0, width: UIScreen.main.bounds.width, height: 30))
         barView.backgroundColor = UIColor(hex: "#F0F1F4FF")
+        barView.layoutMargins = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
         var titleBarLabel: UILabel = UILabel()
         var viewMoreButton: UIButton = UIButton()
-        titleBarLabel.frame = CGRect(x: 10, y: 10, width: 150, height: 30)
+        titleBarLabel.frame = CGRect(x: 20, y: 10, width: 150, height: 30)
         titleBarLabel.adjustsFontSizeToFitWidth = true
         titleBarLabel.text = labelText
         barView.addSubview(titleBarLabel)

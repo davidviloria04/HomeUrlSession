@@ -22,13 +22,15 @@ class WidgetGeneralView: UIViewController {
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.minimumLineSpacing = 1
-        layout.minimumInteritemSpacing = 1
-        layout.itemSize = CGSize(width: (view.frame.size.width/3)-4,
-                                 height: (view.frame.size.height/3)-4)
+        layout.minimumLineSpacing = 30
+        //layout.minimumInteritemSpacing = 1.5
+        layout.itemSize = CGSize(width: (view.frame.size.width/3.8) ,
+                                 height: (view.frame.size.height/6))
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        //layout.collectionView?.layoutMargins = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
         
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-
+        
         guard let collectionView = self.collectionView else {
             return
         }
@@ -36,6 +38,7 @@ class WidgetGeneralView: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         view.addSubview(collectionView)
+        collectionView.backgroundColor = UIColor(hex: "#F0F1F4FF")
         
         collectionView.frame = view.bounds
         presenter?.getWidgetGeneralData()
