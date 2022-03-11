@@ -15,7 +15,7 @@ class WidgetBannerInteractor: WidgetBannerInteractorProtocol {
     var data: [WidgetBanner]?
     
     func fetchWidgetsBanner(callBack: @escaping (_ data: Any?,_ error: Error?) -> Void) {
-        NetworkManager.request(url: "http://192.168.0.12:3000/ClaroPay-WS/widget?id=WIDGET_BANNER", method: "GET", type: BannerResponse.self) { data, error in
+        NetworkManager.request(url: "http://localhost:3000/ClaroPay-WS/widget?id=WIDGET_BANNER", method: "GET", type: BannerResponse.self) { data, error in
             callBack(data, error)
         }
     }

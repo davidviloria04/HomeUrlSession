@@ -15,7 +15,7 @@ class WidgetQuickAccessInteractor: WidgetQuickAccessInteractorProtocol {
     var data: [WidgetQuickAccess]?
 
     func fetchWidgetsQuickAccess(callBack: @escaping (_ data: Any?, _ error: Error?) -> Void) -> Void{
-        NetworkManager.request(url: "http://192.168.0.12:3000/ClaroPay-WS/service?category=HOME", method: "GET", type: WidgetQuickAccessResponse.self) { data, error in
+        NetworkManager.request(url: "http://localhost:3000/ClaroPay-WS/service?category=HOME", method: "GET", type: WidgetQuickAccessResponse.self) { data, error in
             callBack(data, error)
         }
     }
